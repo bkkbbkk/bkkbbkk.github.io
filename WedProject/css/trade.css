@@ -1,0 +1,20 @@
+body {
+	background-image: url(https://i.pinimg.com/originals/9c/72/93/9c729345126a717bb34573f6838aaad7.jpg);
+}
+h1 {
+	margin: 0 150px 0 150px;
+}
+.main , h1{
+	width: 65%;
+	margin: auto;			/*автоматически одинаковый отступ слева и справа*/
+	padding: 20px;
+	
+	color: white;
+}
+h3 {
+	color: white;
+}
+.h1 {
+	border: 5px solid lime;
+	border-radius: 10px;
+}

@@ -1,0 +1,126 @@
+@media all and (min-width: 1150px) {
+	/*Анимация кнопок*/
+	.nav-link:hover:before {
+	transform: scaleX(1);
+	}
+	.nav-link:hover:after {
+	transform: scaleX(1);
+	}
+	.kn:hover {
+	color: white;
+	background-color: lime;
+	transition: 0.3s ease-in;
+	}
+	.green:hover {
+		background-color: black;
+		color: white;
+		transition: 0.8s;
+	}
+	.kn:hover {
+	color: white;
+	background-color: lime;
+	transition: 0.3s ease-in;
+	}
+	.tsp:hover {
+		background-color: orange;
+		color: white;
+		transition: 0.8s;
+	}
+	.second-item:hover {
+		background-color: #91FF98;
+		color: white;
+		transform: scale(1.05);
+		box-shadow: 0 0 40px 5px rgba(0,0,0,0.3);
+		cursor: pointer;
+		transition: 0.4s;
+	}
+	.second-item:hover .redmore {
+		color: white;
+		transition: 0.2s ease-in;
+	}
+	.redmore:hover {
+		cursor: pointer;
+	}
+	.fourth-item:hover {
+	background-color: yellow;
+	transition: 0.5s;
+	transform: scale(1.05);
+	box-shadow: 0 0 40px 5px rgba(0,0,0,0.3);
+	cursor: pointer;
+	}
+	.fourth-item:hover .headEL{
+	border-radius: 10px;
+	transition: 0.5s ease-in;
+	cursor: pointer;
+	}
+	.redmor:hover {
+	background-color: blue;
+	color: white;
+	transition: 0.5s ease-in;
+	cursor: pointer;
+	}
+}
+
+@media all and (max-width: 938px) {
+	.nav-container {
+		overflow: auto;
+		white-space: nowrap;
+
+	}
+	
+	.logo, .search-container, .topnav {
+		display: inline-block;
+	}
+
+	h1 {
+		font-size: 8vw;
+	}
+
+	.header-btn {
+		width: 90vw;
+		height: 60px;
+		margin-top: 15px;
+	}
+	.green {
+		margin-left: 0px;
+	}
+
+	.first-item, .second-item {
+		width: 80%;
+		margin: 20px auto;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.first-box, .contact-box {
+		flex-wrap: wrap;
+		margin-top: 50px;
+	}
+
+	.text {
+		width: 80%;
+		font-size: 2rem;
+	}
+	.input>input {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.img {
+		width: 90%;
+	}
+	.tabs>label {
+		width: 100%;
+		height: 60px;
+	}
+
+	.tabs>label[for="tab_2"] {
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	.tabs>label[for="tab_3"] {
+		margin-left: 0px;
+		margin-top: 10px
+	}
+}
