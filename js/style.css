@@ -1,0 +1,104 @@
+* {
+	/*Отступ от края элемента*/
+	margin: 0;
+	/*устонавливает внутренние отступы со всех сторон элемента*/
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html {
+	/*размер шрифта элемента*/
+	font-size: 10px;
+}
+body {
+	background-image: url(https://s-cdn.sportbox.ru/images/styles/960_auto/fp_fotos/02/bf/88c8f8bfffa7e940455ffcb2b03cb29159b2a3e3b474c966261509.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.div {
+	height: 80px;
+	padding: 0 3%;
+	display: flex;
+	width: 100%;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;	
+	position: fixed;
+	background-color: #C2B8FF;
+}
+
+.shapka {
+	display: flex;
+	margin-right: 100px;
+	/*ширина*/
+	width: 75%;
+	height: 80px;
+	/*определяет как браузер распределяет пространоство вокруг флекс-элементов вдоль главной оси контейнера*/
+	justify-content: flex-end;
+	-ms-align-items: center;
+	/*определяет как браузер распределяет пространоство вокруг флекс-элементов вдоль главной оси контейнера*/
+	align-items: center;
+}
+.cilka {
+	/*стили, декорации текста*/
+	text-decoration: none;
+	/*цвет текста*/
+	color: black;
+	/*определяет, как элемент должен быть показан в документе*/
+	display: inline-block;
+	/*размер шрифта элемента*/
+	font-size: 3rem;
+	/*устанавливает эфект перехода между двумя состояниями элемента*/
+	transition: 0.8s;
+}
+.cilka + .cilka {
+	/*отступ слева*/
+	margin-left: 8%;
+}
+.logo {
+	/*размер шрифта элемента*/
+	font-size: 3rem;
+	/*устанавливает насыщеность текста*/
+	font-weight: bold;
+	/*отступ слева*/
+	margin-left: 100px;
+	margin-bottom: -6px;
+	margin-left: -58px;
+}
+.logo>img {
+	width: 140px;
+	height: 80px;
+	margin-left: 100px;
+}
+.q1 {
+	position: absolute;
+	left: 600px;
+	top: 100px;
+}
+.w1 {
+	position: absolute;
+	left: 830px;
+	top: 660px;
+	width: 266px;
+	height: 104px;
+	opacity: 0.5;
+	background-color: #DBFF00;
+	border: 2px solid brown;
+	border-radius: 10px;
+}
+.q3 {
+	position: absolute;
+	bottom: 30px;
+	left: 75px;
+	color: black;
+	font-size: 3rem;
+}
+.p1 {
+	position: absolute;
+	left: 260px;
+	bottom: 20px;
+}
