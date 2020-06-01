@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+<body>
+	<div>
+		<h1 id="test">0</h1>
+		<button id="st" onclick="st('st')">C</button>
+		<button id="proc" onclick="paste('proc')">%</button>
+		<button id="P_M" onclick="paste('P_M')">+/-</button>
+		<button class="cvet" id="del" onclick="paste('del')">/</button>
+		<button id="seven" onclick="paste('seven')">7</button>
+		<button id="eight" onclick="paste('eight')">8</button>
+		<button id="nine" onclick="paste('nine')">9</button>
+		<button class="cvet" id="ymn" onclick="paste('ymn')">*</button>
+		<button id="four" onclick="paste('four')">4</button>
+		<button id="five" onclick="paste('five')">5</button>
+		<button id="six" onclick="paste('six')">6</button>
+		<button class="cvet" id="minus" onclick="paste('minus')">-</button>
+		<button id="one" onclick="paste('one')">1</button>
+		<button id="two" onclick="paste('two')">2</button>
+		<button id="three" onclick="paste('three')">3</button>
+		<button class="cvet" id="plus" onclick="paste('plus')">+</button>
+		<button id="null" onclick="paste('null')">0</button>
+		<button id="toch" onclick="paste('toch')">.</button>
+		<button class="cvet" onclick="equal()">=</button>
+		<script src="script.js"></script>
+	</div>
+	<style>
+		body {}
+		#test {
+			padding: 10px auto auto 10px;
+			color: white;
+		}
+		.cvet {
+			color: white;
+			background-color: orange;
+		}
+		button {
+			width: 100px;
+			height: 100px;
+		}
+		div {
+			background-color: black;
+			width: 413px;
+			height: 560px;
+			margin-left: 800px;
+		}
+	</style>
+</body>
+</html>
