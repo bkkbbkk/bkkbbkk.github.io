@@ -31,7 +31,7 @@ function main() {
 
 	$('body').append('<main class="main">')
 	let main = $('.main')
-	main.append('<img src="'+pictureLink+'" id="face"/>')
+	main.append('<img src="'+pictureLink+'" id="face">')
 	makeDivs(main, 'Фамилия:', s_name)
 	makeDivs(main, 'Имя:', name)
 	if(f_name) makeDivs(main, 'Отчество:', f_name)
