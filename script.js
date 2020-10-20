@@ -1,25 +1,19 @@
-function main() {
-	// Получаем данные из формы
-	let s_name = $('#s_name').val();
-	let name = $('#name').val();
-	let f_name = $('#f_name').val();
-	let phone = $('#phone').val();
-	let email = $('#email').val();
-	let date = $('#date').val()
-	let age = getAge(date)
-	let d = $(divПриветdiv)
+let primer = '';
+
+
+function equal() {
+	let res = eval(primer)
+	$('#test').text(res)
+	primer = '';
 }
 
-function getAge(date) {
-	let tmp = date.split('-');
-	let year = +tmp[0]
-	let month = +tmp[1]
-	let day = +tmp[2]
-
-	const now = new Date()
-	let nowYear = +now.getFullYear();
-	let nowMonth = +now.getMonth() + 1;
-	let nowDay = +now.getDate();
-
-	$('#q1').split('<div>Ваш возраст:</div>')
+function paste(symbol) {
+	let id = '#' + symbol;
+	primer += $(id).text();
+	$('#test').text(primer)
+}
+function st(){
+	primer = eval('0')
+	$('#test').text(primer)
+	primer = '';
 }
