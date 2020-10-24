@@ -1,68 +1,212 @@
-body {
-	padding: 0px;
-	margin: 0px;
+* {
+	/*Отступ от края элемента*/
+	margin: 0;
+	/*устонавливает внутренние отступы со всех сторон элемента*/
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
-form {
-	width: 70%;
-	margin: 200px auto;
+html, body, header {
+	height: 100%;
+	scroll-behavior: smooth;
+	/*background-color: #111111;*/
 }
 
-fieldset {
-	margin-bottom: 20px;
-	padding: 10px;
-	width: 600px;
+html {
+	/*размер шрифта элемента*/
+	font-size: 10px;
+	/*устонавливает шрифт*/
+	font-family: 'Open Sans' ;
+}
+.foto {
+	width: 100%;
+	height: 1061px;
+	background-color: #111111;
+}
+
+.nav-container {
+	
+	background-color: #161618;
+	/*высота*/
 	height: 80px;
+	/*устонавливает внутренние отступы со всех сторон элемента*/
+	padding: 0 3%;
+	display: flex;
+	/*ширина*/
+	width: 100%;
+	-ms-align-items: center;
+	/*элемент становится по центру*/
+	align-items: center;
+	/*определяет как браузер распределяет пространоство вокруг флекс-элементов вдоль главной оси контейнера*/
+	justify-content: space-between;
+	/*цвет фона*/
+	z-index: 100;
 }
 
-input {
-	width: 300px;
-	border-radius: 5px;
-	outline: none;
-	padding: 3px 15px;
+.topnav {
+	display: flex;
+	/*ширина*/
+	width: 75%;
+	/*определяет как браузер распределяет пространоство вокруг флекс-элементов вдоль главной оси контейнера*/
+	justify-content: flex-end;
+	-ms-align-items: center;
+	/*определяет как браузер распределяет пространоство вокруг флекс-элементов вдоль главной оси контейнера*/
+	align-items: center;
+	margin-right: 400px;
 }
 
-label {
+.nav-link {
+	/*стили, декорации текста*/
+	text-decoration: none;
+	/*цвет текста*/
+	color: black;
+	/*определяет, как элемент должен быть показан в документе*/
 	display: inline-block;
-	vertical-align: top;
-	margin-left: 35px;
+	/*размер шрифта элемента*/
+	font-size: 2rem;
+	/*устанавливает эфект перехода между двумя состояниями элемента*/
+	transition: 0.8s;
+	color: white;
+}
+.nav-link:focus {
+	color: #D2B29B;
 }
 
-#gender7 {
-	margin-left: 44px;
+.nav-link:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #D2B29B;
+	transform: scaleX(0);
+	transition: all 0.2s;
+	transform-origin: 100%;
+}
+.nav-link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #D2B29B;
+	transform: scaleX(0);
+	transition: all 0.2s;
+	transform-origin: 0%;
+}
+.nav-link + .nav-link {
+	/*отступ слева*/
+	margin-left: 3%;
+}
+.logo {
+	/*размер шрифта элемента*/
+	font-size: 1.8rem;
+	/*устанавливает насыщеность текста*/
+	font-weight: bold;
+	/*отступ слева*/
+	margin-left: 50px;
+	color: #FFFACD;
+}
+.photo {
+	margin-left: 100px;
 }
 
-#gender8 {
-	margin-left: -6px;
+.nada {
+	height: 800px;
+	width: 533px;
+
+	margin-right: 20px;
 }
 
-#gender9 {
-	margin-left: 39px;
+.kiril {
+	height: 800px;
+	width: 533px;
 }
 
-.q1 {
-	width: 100px;
+.kto {
+	height: 800px;
+	width: 533px;
+	margin-left: 20px;
 }
-
-.w1 {
-	margin-left: 30px;
+.vibor {
+	color: #BF9D7B;
+	font-size: 51px;
+	margin-top: 70px;
+	margin-left: 400px;
+	font-family: "Raleway", Sans-serif;
 }
-.w2 {
-	margin-left: 44px;
+.primer {
+	color: #BF9D7B;
+	font-size: 25px;
+	margin-left: 700px;
 }
-
-input[type="checkbox"] {
-	margin-top: 10px;
-	width: 20px;
-	margin-left: 10px;
+.prim {
+	width: 100%;
+	height: 700px;
+	background-color: #161618;
+	display: block;
 }
-
-input[type="date"] {
-	width: 125px;
+.women {
+	width: 544px;
+	height: 515px;
+	border: double silver 3px;
+	margin-left: 410px;
+	position: absolute;
+	margin-top: 100px;
+	background-image: url(../dasha.jpg);
+	background-position: -300px -880px;
+	background-repeat: no-repeat;
+	background-size: 110rem;
+	transition: 0.6s;
 }
-
-input[type="color"] {
-	border-radius: 10px;
-	padding: 5px;
-	width: 40px;
+.women:hover {
+	background-position: -150px -600px;
+	background-size: 80rem;
+	transition: 0.6s;
+}
+.man {
+	width: 544px;
+	height: 515px;
+	border: double silver 3px;
+	margin-left: 990px;
+	position: absolute;
+	margin-top: 100px;
+	background-image: url(../ila.jpg);
+	background-position: -10px -350px;
+	background-repeat: no-repeat;
+	background-size: 80rem;
+	transition: 0.6s;
+}
+.man:hover {
+	background-position: 0px -250px;
+	background-size: 60rem;
+	transition: 0.6s;
+}
+.cen {
+	color: white;
+	font-family: "Raleway", Sans-serif;
+	font-size: 12px;
+	margin-top: 150px;
+	margin-left: 100px;
+}
+.fot {
+	width: 384px;
+	height: 88px;
+	font-size: 48px;
+	margin-left: 100px;
+	color: white;
+	font-family: "Raleway", Sans-serif;
+	font-weight: 800;
+    line-height: 1em;
+    letter-spacing: 0.5px;
+}
+.posm {
+	width: 172px;
+	height: 38px;
+	font-size: 1.5rem;
+	margin-left: 100px;
+	margin-top: 30px;
+	background-color: #D2A965;
+	transition: 0.2s;
+	text-decoration: none;
 }
