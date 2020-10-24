@@ -1,0 +1,25 @@
+table {
+	border: 5px solid black;
+	border-collapse: collapse;
+	width: 70%;
+	margin: auto;
+	margin-top: 20px;
+	font-family: 'Oswald', sans-serif;
+}
+td, th {
+	border: 2px double green;
+	padding: 6px;
+}
+td:hover {
+	color: white;
+	background-color: black;
+}
+body {
+	background-image: url(https://actions.s1.citilink.ru/305792_content.jpg);
+	background-size: 100%;
+
+}
+h2 {
+	color: white;
+
+}
